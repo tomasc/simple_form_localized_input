@@ -1,6 +1,6 @@
-# SimpleFormLocalizedInput
+# Simple Form Localized Input
 
-TODO: Write a gem description
+[Simple Form](https://github.com/plataformatec/simple_form) custom input which renders a field for multiple locales in one form. Designed to be used with [Mongoid](https://github.com/mongoid/mongoid).
 
 ## Installation
 
