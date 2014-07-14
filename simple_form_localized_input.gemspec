@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleFormLocalizedInput::VERSION
   spec.authors       = ["Tomas Celizna"]
   spec.email         = ["tomas.celizna@gmail.com"]
-  spec.summary       = %q{Simple Form input that renders a field for all available locales.}
-  spec.description   = %q{Simple Form input that renders a field for all available locales.}
+  spec.summary       = %q{Custom input for Simple Form that renders Mongoid fields for multiple locales.}
+  spec.description   = %q{Custom input for Simple Form that renders Mongoid fields for multiple locales.}
   spec.homepage      = "https://github.com/tomasc/simple_form_localized_input"
   spec.license       = "MIT"
 
