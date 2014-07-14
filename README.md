@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your simple form:
+
+```Ruby
+= form.localized_input :title
+```
+
+This works with inputs of various types, and you can pass options to an input as usual.
 
 ## Contributing
 
