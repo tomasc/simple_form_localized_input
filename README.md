@@ -1,5 +1,7 @@
 # Simple Form Localized Input
 
+[![Gem Version](https://badge.fury.io/rb/simple_form_localized_input.svg)](http://badge.fury.io/rb/simple_form_localized_input)
+
 [Simple Form](https://github.com/plataformatec/simple_form) custom input which renders a field for multiple locales in one form. Designed to be used with [Mongoid](https://github.com/mongoid/mongoid).
 
 ## Installation
