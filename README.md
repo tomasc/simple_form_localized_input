@@ -20,6 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
+In your model:
+
+```Ruby
+class MyModel
+    include Mongoid::Document
+    field :title, type: String, localize: true
+end
+```
+
 In your simple form:
 
 ```Ruby
