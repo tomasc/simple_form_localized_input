@@ -24,8 +24,8 @@ In your model:
 
 ```Ruby
 class MyModel
-    include Mongoid::Document
-    field :title, type: String, localize: true
+  include Mongoid::Document
+  field :title, type: String, localize: true
 end
 ```
 
