@@ -30,7 +30,7 @@ This works with inputs of various types, and you can pass options to an input as
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/simple_form_localized_input/fork )
+1. Fork it ( https://github.com/tomasc/simple_form_localized_input/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
