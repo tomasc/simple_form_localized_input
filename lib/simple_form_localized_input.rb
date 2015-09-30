@@ -1,2 +1,2 @@
-require 'simple_form_localized_input/simple_form_localized_input'
+require 'simple_form_localized_input/form_builder'
 require 'simple_form_localized_input/version'
