@@ -6,7 +6,7 @@ require 'simple_form_localized_input/version'
 Gem::Specification.new do |spec|
   spec.name          = 'simple_form_localized_input'
   spec.version       = SimpleFormLocalizedInput::VERSION
-  spec.authors       = ["Tomáš Celizna"]
+  spec.authors       = ['Tomas Celizna']
   spec.email         = ['tomas.celizna@gmail.com']
   spec.summary       = 'Custom input for Simple Form that renders Mongoid fields for multiple locales.'
   spec.description   = 'Custom input for Simple Form that renders Mongoid fields for multiple locales.'
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'simple_form', '>= 3.0.2'
-  spec.add_dependency 'mongoid', '>= 4.0', '< 6.0'
+  spec.add_dependency 'mongoid', '>= 4.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.6'
-  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake', '~> 10.0'
 end
