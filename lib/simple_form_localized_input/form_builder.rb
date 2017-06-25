@@ -18,7 +18,8 @@ module SimpleFormLocalizedInput
 
               fields.input(loc.to_sym, options.merge(collection: collection, label: label, required: required))
             end.join.html_safe
-          end
+          end +
+          error(attribute_name)
         end
       end
     end
