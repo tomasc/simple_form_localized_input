@@ -1,6 +1,6 @@
 # Simple Form Localized Input
 
-[![Gem Version](https://badge.fury.io/rb/simple_form_localized_input.svg)](http://badge.fury.io/rb/simple_form_localized_input)
+[![Build Status](https://travis-ci.org/tomasc/simple_form_localized_input.svg)](https://travis-ci.org/tomasc/simple_form_localized_input) [![Gem Version](https://badge.fury.io/rb/simple_form_localized_input.svg)](http://badge.fury.io/rb/simple_form_localized_input) [![Coverage Status](https://img.shields.io/coveralls/tomasc/simple_form_localized_input.svg)](https://coveralls.io/r/tomasc/simple_form_localized_input)
 
 [Simple Form](https://github.com/plataformatec/simple_form) custom input which renders a field for multiple locales in one form. Designed to be used with [Mongoid](https://github.com/mongoid/mongoid).
 
