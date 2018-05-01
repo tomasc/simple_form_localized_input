@@ -2,7 +2,7 @@ require 'test_helper'
 
 describe SimpleFormLocalizedInput::FormBuilder do
   let(:form) {
-    simple_form_for(@user, url: '', html: { class: "foo" }) do |form|
+    simple_form_for(@user, url: '') do |form|
       form.localized_input :title
     end
   }

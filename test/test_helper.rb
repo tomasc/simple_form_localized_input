@@ -15,6 +15,7 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
 class MiniTest::Spec
   include ActionView::Helpers::FormHelper
+  include ActionView::RecordIdentifier
   include SimpleForm::ActionViewExtensions::FormHelper
 
   before { set_controller }
