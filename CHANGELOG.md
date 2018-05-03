@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.6
+
+* Mongoid 7
+
 ## 1.0.5
 
 * add basic test
