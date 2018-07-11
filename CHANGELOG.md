@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.7
+
+* add support for `LocalizedPresenceValidator`
+
 ## 1.0.6
 
 * Mongoid 7
