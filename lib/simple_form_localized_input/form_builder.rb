@@ -23,7 +23,7 @@ module SimpleFormLocalizedInput
                 column,
                 input_type,
                 options
-              ).label_text
+              ).send(:raw_label_text)
 
               required = object.class.validators_on(attribute_name).any? do |v|
                 v.kind == :presence &&
@@ -33,7 +33,7 @@ module SimpleFormLocalizedInput
 
               fields.input(
                 loc.to_sym,
-                options.merge(collection: collection, label: "#{localized_label} (#{loc})", required: required)
+                options.merge(collection: collection, label: "#{localized_label} (#{loc})".html_safe, required: required)
               )
             end.join.html_safe
           end + error(attribute_name)

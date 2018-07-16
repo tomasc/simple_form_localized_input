@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.0.8
+## 1.0.9
 
 * hook into `SimpleForm` `#label_text` method for full `I18n` support
 
