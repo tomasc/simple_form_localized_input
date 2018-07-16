@@ -13,14 +13,28 @@ module SimpleFormLocalizedInput
           simple_fields_for(field_name, field_value) do |fields|
             ::I18n.available_locales.collect do |loc|
               collection = options[:collection_translations] ? options[:collection_translations][loc.to_s] : options[:collection]
-              label = [object.class.human_attribute_name(attribute_name), "(#{loc})"].reject(&:blank?).join(' ')
+
+              column = find_attribute_column(attribute_name)
+              input_type = default_input_type(attribute_name, column, options)
+
+              localized_label = SimpleForm::Inputs::Base.new(
+                self,
+                attribute_name,
+                column,
+                input_type,
+                options
+              ).label_text
+
               required = object.class.validators_on(attribute_name).any? do |v|
                 v.kind == :presence &&
                   valid_validator?(v) &&
                   valid_localized_presence_validator?(v, loc)
               end
 
-              fields.input(loc.to_sym, options.merge(collection: collection, label: label, required: required))
+              fields.input(
+                loc.to_sym,
+                options.merge(collection: collection, label: "#{localized_label} (#{loc})", required: required)
+              )
             end.join.html_safe
           end + error(attribute_name)
         end

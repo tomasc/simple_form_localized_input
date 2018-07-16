@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.8
+
+* hook into `SimpleForm` `#label_text` method for full `I18n` support
+
 ## 1.0.7
 
 * add support for `LocalizedPresenceValidator`
