@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.10
+
+* add support for `SimpleForm` hints
+
 ## 1.0.9
 
 * hook into `SimpleForm` `#label_text` method for full `I18n` support

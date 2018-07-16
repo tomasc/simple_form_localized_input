@@ -36,7 +36,7 @@ module SimpleFormLocalizedInput
                 options.merge(collection: collection, label: "#{localized_label} (#{loc})".html_safe, required: required)
               )
             end.join.html_safe
-          end + error(attribute_name)
+          end + hint(attribute_name) + error(attribute_name)
         end
 
         private
