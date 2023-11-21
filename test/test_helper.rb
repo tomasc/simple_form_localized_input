@@ -13,7 +13,7 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
 ::I18n.available_locales = %i(en cs)
 
-class MiniTest::Spec
+class Minitest::Spec
   include ActionView::Helpers::FormHelper
   include ActionView::RecordIdentifier
   include SimpleForm::ActionViewExtensions::FormHelper
