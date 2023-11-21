@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.11
+
+* Mongoid 8 compatibility
+
 ## 1.0.10
 
 * add support for `SimpleForm` hints
