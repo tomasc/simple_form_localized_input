@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.12
+
+* Add `localized` class to wrapper
+
 ## 1.0.11
 
 * Mongoid 8 compatibility
