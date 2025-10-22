@@ -10,6 +10,9 @@ module SimpleFormLocalizedInput
           field_name = [attribute_name, 'translations'].join('_')
           field_value = OpenStruct.new(object.send(field_name))
 
+          options[:wrapper_html] ||= {}
+          options[:wrapper_html][:class] = [options[:wrapper_html][:class], "localized"].compact.join(" ").strip
+
           simple_fields_for(field_name, field_value) do |fields|
             ::I18n.available_locales.collect do |loc|
               collection = options[:collection_translations] ? options[:collection_translations][loc.to_s] : options[:collection]
