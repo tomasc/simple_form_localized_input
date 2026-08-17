@@ -36,7 +36,12 @@ module SimpleFormLocalizedInput
 
               fields.input(
                 loc.to_sym,
-                options.merge(collection: collection, label: "#{localized_label} (#{loc})".html_safe, required: required)
+                options.merge(
+                  collection: collection,
+                  label: "#{localized_label} (#{loc})".html_safe,
+                  required: required,
+                  input_html: (options[:input_html] || {}).merge(lang: loc.to_s)
+                )
               )
             end.join.html_safe
           end + hint(attribute_name) + error(attribute_name)
